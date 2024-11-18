@@ -8,4 +8,6 @@ To achieve this, multiple decision has been made:
 
 - LuaJIT 32bit, ce app will be entirely in LuaJIT, being able to be really fast and use FFI to call other package at C type speed
 - Libusb, like repo has made before, the USB control for the nivida 3D vision IR emitor has been know, using liusb with a basic win mounted driver will make easy to control the IR emitor through FFI calls
-- 
+- Vulkan, for the converting of SBS to active 3D and the sync through Vsync, Vulkan, much more recent than openGL used in the older repo will be used through FFI calls
+
+!!! user interface will be minimal at first, as, modularity will be a secondary concern
